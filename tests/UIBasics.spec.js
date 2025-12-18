@@ -6,7 +6,7 @@ test ('First PlayWright Test',async ({browser})=>
 //Playwright Test Code
 // new incognito window, we will provide which browser to open in config
 const context = await browser.newContext();
-const page = await context.newPa();
+const page = await context.newPage();
 // above two lines we can comment since browser,page will be provide them by default,
 //so that we can directly access from goto
 // provide which page we want to open 
