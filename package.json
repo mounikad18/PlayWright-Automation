@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test"
+    "test": "cucumber-js test",
+    "test:allure": "npx playwright test --headed && npx allure generate allure-results -o allure-report --clean && npx allure open allure-report"
   },
   "keywords": [],
   "author": "",

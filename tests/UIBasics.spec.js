@@ -1,7 +1,7 @@
 const {test, expect} = require('@playwright/test');
 
 //Syntax of tetcase
-test.only ('First PlayWright Test',async ({browser})=>
+test ('First PlayWright Test',async ({browser})=>
  {
 //Playwright Test Code
 // new incognito window, we will provide which browser to open in config
