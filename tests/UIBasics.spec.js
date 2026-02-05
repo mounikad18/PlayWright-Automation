@@ -10,15 +10,15 @@ const page = await context.newPage();
 // above two lines we can comment since browser,page will be provide them by default,
 //so that we can directly access from goto
 // provide which page we want to open 
-const userName = page.locator("#username");
-const password = page.locator("[type='password']");
-const signIn = page.locator("#signInBtn");
+const userNae = page.locator("#username");
+const passwrd = page.locator("[type='password']");
+const sigIn = page.locator("#signInBtn");
 await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
 // get title of page and print
 console.log ( await page.title());
-await userName.fill("Mounika");
-await password.fill("Mounika");
-await signIn.click();
+await userNae.fill("Mounika");
+await passwrd.fill("Mounika");
+await sigIn.click();
 console.log(await page.locator("[style*='block']").textContent());
 await expect(page.locator("[style*='block']")).toContainText("Incorrect");
 await userName.fill("");
